@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Employee App</title>
+</head>
+<body>
+    <aside>
+        <div class="kv-logo">
+            <img src="./kv logo.png" alt="KeyValue logo">
+        </div>
+        <nav>
+            <a href="" class="nav-link">
+                    <img src="./List.png" alt="List" class="nav-link-logo">
+                    <p>Employee List</p>
+            </a>
+        </nav>
+    </aside>
+    <main>
+        <header></header>
+        <section class="title">
+            Create Employee
+        </section>
+        <section>
+            <form action="" id="create-emp" class="form-flex">
+                <div class="form-element"> 
+                    <p>Employee Name</p>
+                    <input type="text" id="ename" name="ename">
+                </div>
+                <div class="form-element">
+                    <p>Employee ID</p>
+                    <input type="text" id="eid" name="eid">
+                </div>
+                <div class="form-element">
+                    <p>Employee Email</p>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="form-element"> 
+                    <p>Joining Date</p>
+                    <input type="text" id="joindate" name="joindate">
+                </div>
+                <div class="form-element">
+                    <p>Role</p>
+                    <!-- <input type="text" id="role" name="role"> -->
+                    <select name="role" id="role">
+                        <option value="SWE">SWE</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <p>Status</p>
+                    <select name="status" id="status">
+                        <option value="active">active</option>
+                        <option value="inactive">inactive</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <p>Experience</p>
+                    <input type="text" id="exp" name="exp">
+                </div>
+                <div class="form-element">
+                    <p>Address</p>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div class="form-element">
+                    <p>Upload ID proof</p>
+                    <input type="file" id="idproof" name="idproof">
+                </div>
+                <p id="sample"></p>
+                <button id="create" class="primary-btn" type="submit" form="create-emp" onclick="submitForm()">Create</button>
+                <button type="button" onclick="processChange()">Cancel</button>
+            </form>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
